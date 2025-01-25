@@ -68,3 +68,7 @@ eslint: ## Execute eslint
 eslint-fix:## Fix eslint
 	@echo "Fix eslint ..."
 	./node_modules/.bin/eslint  ./assets/js/** --fix
+
+phpstan: ## Execute phpstan
+	@echo "Execute phpstan ..."
+	$(PHP_CONT) vendor/bin/phpstan analyse src
