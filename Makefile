@@ -59,3 +59,12 @@ sf: ## List all Symfony commands or pass the parameter "c=" to run a given comma
 
 cc: c=c:c ## Clear the cache
 cc: sf
+
+## —— Code quality ————————————————————————————————————————————————————————————————————
+eslint: ## Execute eslint
+	@echo "Execute eslint ..."
+	./node_modules/.bin/eslint  ./assets/js/**
+
+eslint-fix:## Fix eslint
+	@echo "Fix eslint ..."
+	./node_modules/.bin/eslint  ./assets/js/** --fix
