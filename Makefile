@@ -72,3 +72,7 @@ eslint-fix:## Fix eslint
 phpstan: ## Execute phpstan
 	@echo "Execute phpstan ..."
 	$(PHP_CONT) vendor/bin/phpstan analyse src
+
+phpcs: ## Execute phpcs
+	@echo "Execute phpcs ..."
+	$(PHP_CONT) ./vendor/bin/php-cs-fixer fix src
